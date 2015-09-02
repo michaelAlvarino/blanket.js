@@ -16,7 +16,8 @@
       var xlength=data.length;
       var ylength=data[0].length;
       for(var x=0;x<xlength;x++){
-        output.push(t=[]);
+        var t = [];
+        output.push(t);
         for(var y=0;y<ylength;y++){
             var value=heightFunction(data[x][y],x,y);
             t.push(value);
@@ -51,7 +52,6 @@
       var xlength=data.length;
       var ylength=data[0].length;
       var d0=[];
-      var idx=0;
       for(var x=0;x<xlength-1;x++){
         for(var y=0;y<ylength-1;y++){
           var depth=data[x][y][2]+data[x+1][y][2]+data[x+1][y+1][2]+data[x][y+1][2];
@@ -111,7 +111,7 @@
     };
     this.transition=function(){ 
       var transition=d3.selection.prototype.transition.bind(node)();
-      colourFunction=null;
+      colorFunction=null;
       heightFunction=null;
       transition.surfaceHeight=this.surfaceHeight;
       transition.surfaceColor=this.surfaceColor;

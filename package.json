@@ -1,0 +1,23 @@
+{
+  "name": "blanket.js",
+  "version": "1.0.0",
+  "description": "3D Surface Plotting Library",
+  "main": "blanket.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelAlvarino/blanket.js.git"
+  },
+  "author": "Michael Alvarino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelAlvarino/blanket.js/issues"
+  },
+  "homepage": "https://github.com/michaelAlvarino/blanket.js#readme",
+  "dependencies": {
+    "d3": "^3.5.6",
+    "tsd": "^0.6.4"
+  }
+}
